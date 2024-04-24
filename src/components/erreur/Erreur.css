@@ -1,0 +1,28 @@
+.erreurComp{
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    width: auto;
+    height: 3rem;
+    border: 1px solid var(--color-danger);
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-danger-backgroung);
+    padding: var(--padding-1);
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    
+}
+
+
+
+
+.erreurComp>p{
+    color: var(--color-dark);
+    font-size: 1rem; 
+}
+.erreurComp>.closeErreur{
+    color: var(--color-danger);
+}

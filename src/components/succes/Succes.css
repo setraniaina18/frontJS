@@ -1,0 +1,39 @@
+.succesComp{
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    width: auto;
+    height: 3rem;
+    border: 1px solid var(--color-success);
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-success-backgroung);
+    padding: var(--padding-1);
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    animation: anim 5s ease-out;
+}
+
+@keyframes anim{
+    0% {
+        opacity: 1;
+    }
+    98% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.succesComp>p{
+    color: var(--color-dark);
+    font-size: 1rem;
+    
+}
+.succesComp>.closeSucces{
+    color: var(--color-success);
+}

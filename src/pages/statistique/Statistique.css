@@ -1,0 +1,68 @@
+.stat {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+    margin-top: var(--card-padding);
+    margin-top: 6rem;
+}
+
+
+.piechart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+}
+
+.piechart>div {
+    height: 35vh;
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.barchart {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+tspan {
+    fill: var(--color-dark) !important;
+}
+
+.css-1mhcdve-MuiPieArc-root {
+    stroke: var(--color-white) !important;
+}
+.css-1k2u9zb-MuiChartsAxis-root .MuiChartsAxis-line,
+.css-1k2u9zb-MuiChartsAxis-root .MuiChartsAxis-tick  {
+    stroke: var(--color-dark) !important;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .stat {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+    .piechart {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .barchart {
+        width: 90%;
+    }
+}
+
