@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 import { Html5QrcodeScanner } from 'html5-qrcode';
 import { Button, IconButton } from '@mui/material';
-
 import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded';
 import Brightness7RoundedIcon from '@mui/icons-material/Brightness7Rounded';
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
@@ -45,7 +44,7 @@ export function Pointages() {
 
     const [cin, setCin] = useState('');
     const [isOpen, setIsOpen] = useState(false);
-    
+
     var scanner = null;
 
     function openScan() {
@@ -369,8 +368,6 @@ export function Pointages() {
                                 ajoutPointages();
                                 setConfPointage(false);
                                 location.reload();
-
-
                             }}
                         >
                             confirmer

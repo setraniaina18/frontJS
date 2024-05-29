@@ -1,4 +1,4 @@
-.erreurComp{
+.erreurComp {
     position: fixed;
     bottom: 5rem;
     right: 2rem;
@@ -13,16 +13,13 @@
     justify-content: space-between;
     align-items: center;
     z-index: 20;
-    
 }
 
-
-
-
-.erreurComp>p{
+.erreurComp>p {
     color: var(--color-dark);
-    font-size: 1rem; 
+    font-size: 1rem;
 }
-.erreurComp>.closeErreur{
+
+.erreurComp>.closeErreur {
     color: var(--color-danger);
 }

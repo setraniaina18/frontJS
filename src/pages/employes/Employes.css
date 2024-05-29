@@ -284,6 +284,9 @@ input[type='file'] {
 }
 
 .qrCode {
+    border: 1px solid #363949;
+    background-color: #f6f6f9;
+    padding: var(--padding-1);
     width: 11rem;
     height: 11rem;
     border-radius: var(--border-radius-1);

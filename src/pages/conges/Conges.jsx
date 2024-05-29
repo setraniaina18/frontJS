@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import { QRCode } from 'react-qr-code';
 import { Succes } from '../../components/succes/Succes';
 import axios from 'axios';
@@ -604,7 +604,7 @@ export function Conges() {
                             <div id='carteP'>
                                 <div className='carte1' >
                                     <div className='qrCode'>
-                                        <QRCode className='qrCode' value={donneeCibleConge.cin_emp_cong} {...qrCodeOptions} />
+                                        <QRCode  value={donneeCibleConge.cin_emp_cong} {...qrCodeOptions} />
                                     </div>
                                     <div className='infoQR'>
                                         <p>Nom : {donneeCibleEmpConge.nom}</p>

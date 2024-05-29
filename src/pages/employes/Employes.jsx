@@ -132,6 +132,7 @@ export function Employes() {
                             align-items: flex-start;
                             font-size: 1rem;
                             font-weight: 600;
+                            gap:0;
                         }
                         .infoQR>p {
                             color: #363949;
@@ -139,10 +140,19 @@ export function Employes() {
                         }
                         
                         .qrCode {
-                            width: 14rem;
-                            height: 14rem;
+                            width: 13rem;
+                            height: 13rem;
+                            border: 1px solid #363949;
+                            background-color: #f6f6f9;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             border-radius: 0.4rem;
                         
+                        }
+                        .codeQR{   
+                            width: 10.5rem;
+                            height: 10.5rem;
                         }
                         
                     </style>
@@ -713,9 +723,7 @@ export function Employes() {
                                 <CloseIcon />
                             </IconButton>
                         </div>
-
                         <div className='carte'>
-
                             <div className="profileP">
                                 <div className='profil1'>
                                     <img className='img1' src={urlFile1 ? urlFile1 : "http://localhost:3723/images/" + donneeCible.photo} />
@@ -725,13 +733,11 @@ export function Employes() {
                                         whileTap={{ scale: 0.9 }}
                                         onClick={() => { setModPhoto(true) }}
                                     >
-
                                         <CameraAltRoundedIcon className='iconImg1' />
                                     </motion.label>
                                 </div>
                                 <input name='photo1' type="file" id='imgP' onChange={handlechangeImgInf} />
                             </div>
-
                             <div id='carteP'>
                                 <div className='carte1' >
                                     <Button
@@ -745,7 +751,7 @@ export function Employes() {
                                     >
                                     </Button>
                                     <div className='qrCode'>
-                                        <QRCode className='qrCode' value={donneeCible.cin} {...qrCodeOptions} />
+                                        <QRCode className='codeQR' value={donneeCible.cin} {...qrCodeOptions} />
                                     </div>
                                     <div className='infoQR'>
                                         <p>Nom : {donneeCible.nom}</p>
